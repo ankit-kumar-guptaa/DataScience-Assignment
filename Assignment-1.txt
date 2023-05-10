@@ -68,8 +68,91 @@ print(result)
 
 Q4. Create a list of length 10 of your choice containing multiple types of data. Using for loop print the element and its data type.
 Answer:-
-my_list = [1, 2.5, 'Hello', True, [1, 2, 3], {'name': 'Ankit', 'age': 26}, None, (4, 5), 6 + 2j, False]
+my_list = [1, 2.5, 'Hello', True, [1, 2, 3], {'name': 'Ankit', 'age': 22}, None, (4, 5), 6 + 2j, False]
 
 for element in my_list:
     print(f"Element: {element}, Data Type: {type(element)}")
+output:-
+Element: 1, Data Type: <class 'int'>
+Element: 2.5, Data Type: <class 'float'>
+Element: Hello, Data Type: <class 'str'>
+Element: True, Data Type: <class 'bool'>
+Element: [1, 2, 3], Data Type: <class 'list'>
+Element: {'name': 'Ankit', 'age': 22}, Data Type: <class 'dict'>
+Element: None, Data Type: <class 'NoneType'>
+Element: (4, 5), Data Type: <class 'tuple'>
+Element: (6+2j), Data Type: <class 'complex'>
+Element: False, Data Type: <class 'bool'>
 
+Q5. Using a while loop, verify if the number A is purely divisible by number B and if so then how many times it can be divisible.
+Answer:-
+A = 24
+B = 3
+
+count = 0
+
+while A % B == 0:
+    A = A // B
+    count += 1
+
+print(f"Number A is divisible by number B {count} times.")
+output:-
+Number A is divisible by number B 3 times.
+
+Q6. Create a list containing 25 int type data. Using for loop and if-else condition print if the element is divisible by 3 or not.
+Answer:-
+my_list = [7, 12, 15, 8, 21, 30, 17, 9, 5, 18, 27, 14, 33, 22, 11, 36, 20, 3, 16, 24, 19, 6, 13, 10, 25]
+
+for element in my_list:
+    if element % 3 == 0:
+        print(f"{element} is divisible by 3.")
+    else:
+        print(f"{element} is not divisible by 3.")
+output:-
+7 is not divisible by 3.
+12 is divisible by 3.
+15 is divisible by 3.
+8 is not divisible by 3.
+21 is divisible by 3.
+30 is divisible by 3.
+17 is not divisible by 3.
+9 is divisible by 3.
+5 is not divisible by 3.
+18 is divisible by 3.
+27 is divisible by 3.
+14 is not divisible by 3.
+33 is divisible by 3.
+22 is not divisible by 3.
+11 is not divisible by 3.
+36 is divisible by 3.
+20 is not divisible by 3.
+3 is divisible by 3.
+16 is not divisible by 3.
+24 is divisible by 3.
+19 is not divisible by 3.
+6 is divisible by 3.
+13 is not divisible by 3.
+10 is not divisible by 3.
+25 is not divisible by 3.
+
+Q7. What do you understand about mutable and immutable data types? Give examples for both showing this property.
+Answer:-
+Mutable and immutable are two important concepts in programming, particularly when it comes to data types. Here's an explanation of mutable and immutable data types along with examples in Python:
+
+Immutable Data Types:
+Immutable data types are those whose values cannot be changed after they are created. If you modify an immutable object, a new object is created with the modified value. Examples of immutable data types in Python include:
+int (integer)
+float
+bool (boolean)
+str (string)
+tuple
+Example:
+# Immutable data types
+a = 10
+b = 3.14
+c = True
+d = "Hello"
+e = (1, 2, 3)
+
+# Attempting to modify an immutable object
+a = 20  # Creates a new object with the value 20
