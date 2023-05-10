@@ -1,0 +1,19 @@
+Q-1Create one variable containing following type of data:
+(i) string
+(ii) list
+(iii) float
+(iv) tuple
+Answer:-
+# (i) String
+my_string = "Hello, World!"
+
+# (ii) List
+my_list = [1, 2, 3, 4, 5]
+
+# (iii) Float
+my_float = 3.14
+
+# (iv) Tuple
+my_tuple = (6, 7, 8, 9, 10)
+
+
