@@ -16,4 +16,60 @@ my_float = 3.14
 # (iv) Tuple
 my_tuple = (6, 7, 8, 9, 10)
 
+Q2. Given are some following variables containing data:
+(i) var1 = ‘ ‘
+(ii) var2 = ‘[ DS , ML , Python]’
+(iii) var3 = [ ‘DS’ , ’ML’ , ‘Python’ ]
+(iv) var4 = 1.
+Answer:-
+(i) var1 is a string variable that contains an empty string. It doesn't have any characters within the quotation marks.
+
+(ii) var2 is also a string variable that contains a string representation of a list. The list elements are 'DS', 'ML', and 'Python'. Note that the elements are enclosed in single quotes within the square brackets.
+
+(iii) var3 is a list variable that directly contains three string elements: 'DS', 'ML', and 'Python'. The elements are enclosed in single quotes and separated by commas.
+
+(iv) var4 is an integer variable that stores the value 1. It is not enclosed in quotation marks since it represents a numerical value, not a string.
+
+the data type of the above given variable is List.
+
+Q3. Explain the use of the following operators using an example:
+(i) /
+(ii) %
+(iii) //
+(iv) **
+Answer:-
+i) / (Division Operator): The division operator is used to perform division between two numbers and returns the quotient as a floating-point number.
+Example:
+a = 10
+b = 3
+result = a / b
+print(result)
+
+(ii) % (Modulo Operator): The modulo operator is used to calculate the remainder of the division between two numbers.
+Example:
+a = 10
+b = 3
+result = a % b
+print(result)
+
+(iii) // (Floor Division Operator): The floor division operator is used to perform division between two numbers and returns the quotient as an integer, rounding down to the nearest whole number.
+Example:
+a = 10
+b = 3
+result = a // b
+print(result)
+
+(iv) ** (Exponentiation Operator): The exponentiation operator is used to raise a number to a power.
+Example:
+a = 2
+b = 3
+result = a ** b
+print(result)
+
+Q4. Create a list of length 10 of your choice containing multiple types of data. Using for loop print the element and its data type.
+Answer:-
+my_list = [1, 2.5, 'Hello', True, [1, 2, 3], {'name': 'Ankit', 'age': 26}, None, (4, 5), 6 + 2j, False]
+
+for element in my_list:
+    print(f"Element: {element}, Data Type: {type(element)}")
 
